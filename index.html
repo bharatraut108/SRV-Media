@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premier Schools Exhibition - Discover and connect with over 500 premier schools across 17 cities globally. Find the perfect school for your child.">
+    <title>Premier Schools Exhibition - Find Your Perfect School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Crect width='160' height='80' rx='8' fill='%230A7EA4'/%3E%3Ctext x='50%25' y='30' font-family='Arial, sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EPremier Schools%3C/text%3E%3Ctext x='50%25' y='55' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='%23FFD700' text-anchor='middle'%3EExhibition%3C/text%3E%3C/svg%3E" alt="Premier Schools Exhibition Logo" width="160" height="80">
+            </div>
+            <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                <a href="#register" class="btn btn--primary">
+                    Register Now
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section with Dual-Axis Slider -->
+        <section class="hero" aria-label="Hero Showcase">
+            <div class="hero__slider" role="region" aria-label="Image carousel" aria-live="polite">
+                <div class="hero__track hero__track--horizontal">
+                    <!-- Slide 1 -->
+                    <div class="hero__slide hero__slide--active" data-slide="0">
+                        <div class="hero__slide-inner">
+                            <div class="hero__content">
+                                <h1 class="hero__title">Discover Premier Schools Worldwide</h1>
+                                <p class="hero__subtitle">Connect with 500+ leading educational institutions across 17 cities</p>
+                                <a href="#schools" class="btn btn--secondary">Explore Schools</a>
+                            </div>
+                            <div class="hero__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <div class="hero__image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="hero__slide" data-slide="1">
+                        <div class="hero__slide-inner">
+                            <div class="hero__content">
+                                <h1 class="hero__title">22+ Years of Educational Excellence</h1>
+                                <p class="hero__subtitle">Trusted by over 1 million parents for quality education</p>
+                                <a href="#register" class="btn btn--secondary">Get Started</a>
+                            </div>
+                            <div class="hero__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <div class="hero__image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="hero__slide" data-slide="2">
+                        <div class="hero__slide-inner">
+                            <div class="hero__content">
+                                <h1 class="hero__title">Find Your Perfect Match</h1>
+                                <p class="hero__subtitle">From pre-schools to international curriculum - we have it all</p>
+                                <a href="#categories" class="btn btn--secondary">View Categories</a>
+                            </div>
+                            <div class="hero__image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <div class="hero__image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Controls -->
+                <div class="hero__controls">
+                    <button class="hero__control hero__control--prev" aria-label="Previous slide" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="hero__control hero__control--next" aria-label="Next slide" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="hero__control hero__control--pause" aria-label="Pause slideshow" type="button">
+                        <svg class="hero__pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+                            <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+                        </svg>
+                        <svg class="hero__play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display: none;">
+                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Hero Indicators -->
+                <div class="hero__indicators" role="tablist" aria-label="Slide navigation">
+                    <button class="hero__indicator hero__indicator--active" role="tab" aria-label="Go to slide 1" aria-selected="true" data-slide="0" type="button"></button>
+                    <button class="hero__indicator" role="tab" aria-label="Go to slide 2" aria-selected="false" data-slide="1" type="button"></button>
+                    <button class="hero__indicator" role="tab" aria-label="Go to slide 3" aria-selected="false" data-slide="2" type="button"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" aria-label="Our Achievements">
+            <div class="stats__container">
+                <div class="stats__item">
+                    <div class="stats__laurel" aria-hidden="true">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <path d="M30 60 Q25 45, 20 30 Q30 35, 35 40 Q40 50, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 45, 100 30 Q90 35, 85 40 Q80 50, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M30 60 Q25 75, 20 90 Q30 85, 35 80 Q40 70, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 75, 100 90 Q90 85, 85 80 Q80 70, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p class="stats__label">Trusted by</p>
+                    <p class="stats__value">1 Million+</p>
+                    <p class="stats__description">Parents</p>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__laurel" aria-hidden="true">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <path d="M30 60 Q25 45, 20 30 Q30 35, 35 40 Q40 50, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 45, 100 30 Q90 35, 85 40 Q80 50, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M30 60 Q25 75, 20 90 Q30 85, 35 80 Q40 70, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 75, 100 90 Q90 85, 85 80 Q80 70, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p class="stats__value">22+</p>
+                    <p class="stats__label">Years</p>
+                    <p class="stats__description">of Legacy</p>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__laurel" aria-hidden="true">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <path d="M30 60 Q25 45, 20 30 Q30 35, 35 40 Q40 50, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 45, 100 30 Q90 35, 85 40 Q80 50, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M30 60 Q25 75, 20 90 Q30 85, 35 80 Q40 70, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 75, 100 90 Q90 85, 85 80 Q80 70, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p class="stats__value">500+</p>
+                    <p class="stats__label">Participating</p>
+                    <p class="stats__description">Schools</p>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__laurel" aria-hidden="true">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <path d="M30 60 Q25 45, 20 30 Q30 35, 35 40 Q40 50, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 45, 100 30 Q90 35, 85 40 Q80 50, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M30 60 Q25 75, 20 90 Q30 85, 35 80 Q40 70, 40 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M90 60 Q95 75, 100 90 Q90 85, 85 80 Q80 70, 80 60" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p class="stats__value">17 Cities</p>
+                    <p class="stats__label">Across the</p>
+                    <p class="stats__description">Globe</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Participating Schools Section with Continuous Sling Animation -->
+        <section class="schools" id="schools" aria-label="Participating Schools">
+            <div class="schools__container">
+                <h2 class="schools__title">Participating Schools</h2>
+                
+                <!-- First Row - Left to Right -->
+                <div class="schools__track schools__track--ltr" role="region" aria-label="School logos scrolling left to right">
+                    <div class="schools__sling" aria-live="off">
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%231a1f5c'/%3E%3Ctext x='50%25' y='50%25' font-family='serif' font-size='16' font-weight='bold' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle'%3EHARROW%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-size='10' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBangkok%3C/text%3E%3C/svg%3E" alt="Harrow International School Bangkok" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='10' y='30' width='40' height='60' fill='%230A7EA4'/%3E%3Crect x='60' y='30' width='40' height='60' fill='%23FFD700'/%3E%3Crect x='110' y='30' width='40' height='60' fill='%23C41E3A'/%3E%3Ctext x='50%25' y='65%25' font-family='serif' font-size='14' font-weight='bold' fill='%23333' text-anchor='middle'%3EShrewsbury%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EInternational School%3C/text%3E%3C/svg%3E" alt="Shrewsbury International School" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23F5F5F5'/%3E%3Ccircle cx='100' cy='45' r='25' fill='%238B0000'/%3E%3Ctext x='100' y='50' font-family='serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='serif' font-size='13' fill='%238B0000' text-anchor='middle'%3EKing's College India%3C/text%3E%3C/svg%3E" alt="King's College India" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Ccircle cx='100' cy='50' r='30' fill='none' stroke='%23654321' stroke-width='2'/%3E%3Cpath d='M 100 35 L 100 65 M 85 50 L 115 50' stroke='%23654321' stroke-width='3'/%3E%3Cpath d='M 90 40 Q 95 30, 100 35 Q 105 30, 110 40' fill='%232F4F2F'/%3E%3Ctext x='50%25' y='90%25' font-family='serif' font-size='11' fill='%23654321' text-anchor='middle'%3EWoodstock School%3C/text%3E%3C/svg%3E" alt="Woodstock School" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='80' y='25' width='40' height='40' fill='none' stroke='%230A7EA4' stroke-width='3'/%3E%3Cpath d='M 85 35 L 100 50 L 115 35' fill='%230A7EA4'/%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='11' font-weight='600' fill='%230A7EA4' text-anchor='middle'%3EAga Khan Academy%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EMombasa%3C/text%3E%3C/svg%3E" alt="Aga Khan Academy Mombasa" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23000080'/%3E%3Ccircle cx='100' cy='45' r='20' fill='%23FFD700'/%3E%3Cpath d='M 100 30 L 105 40 L 95 40 Z' fill='%23000080'/%3E%3Ctext x='50%25' y='75%25' font-family='serif' font-size='12' font-weight='bold' fill='white' text-anchor='middle'%3EBISHOP COTTON%3C/text%3E%3Ctext x='50%25' y='88%25' font-family='sans-serif' font-size='9' fill='%23FFD700' text-anchor='middle'%3ESchool%3C/text%3E%3C/svg%3E" alt="Bishop Cotton School" class="schools__logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="schools__sling" aria-hidden="true">
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%231a1f5c'/%3E%3Ctext x='50%25' y='50%25' font-family='serif' font-size='16' font-weight='bold' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle'%3EHARROW%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-size='10' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBangkok%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='10' y='30' width='40' height='60' fill='%230A7EA4'/%3E%3Crect x='60' y='30' width='40' height='60' fill='%23FFD700'/%3E%3Crect x='110' y='30' width='40' height='60' fill='%23C41E3A'/%3E%3Ctext x='50%25' y='65%25' font-family='serif' font-size='14' font-weight='bold' fill='%23333' text-anchor='middle'%3EShrewsbury%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EInternational School%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23F5F5F5'/%3E%3Ccircle cx='100' cy='45' r='25' fill='%238B0000'/%3E%3Ctext x='100' y='50' font-family='serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='serif' font-size='13' fill='%238B0000' text-anchor='middle'%3EKing's College India%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Ccircle cx='100' cy='50' r='30' fill='none' stroke='%23654321' stroke-width='2'/%3E%3Cpath d='M 100 35 L 100 65 M 85 50 L 115 50' stroke='%23654321' stroke-width='3'/%3E%3Cpath d='M 90 40 Q 95 30, 100 35 Q 105 30, 110 40' fill='%232F4F2F'/%3E%3Ctext x='50%25' y='90%25' font-family='serif' font-size='11' fill='%23654321' text-anchor='middle'%3EWoodstock School%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='80' y='25' width='40' height='40' fill='none' stroke='%230A7EA4' stroke-width='3'/%3E%3Cpath d='M 85 35 L 100 50 L 115 35' fill='%230A7EA4'/%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='11' font-weight='600' fill='%230A7EA4' text-anchor='middle'%3EAga Khan Academy%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EMombasa%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23000080'/%3E%3Ccircle cx='100' cy='45' r='20' fill='%23FFD700'/%3E%3Cpath d='M 100 30 L 105 40 L 95 40 Z' fill='%23000080'/%3E%3Ctext x='50%25' y='75%25' font-family='serif' font-size='12' font-weight='bold' fill='white' text-anchor='middle'%3EBISHOP COTTON%3C/text%3E%3Ctext x='50%25' y='88%25' font-family='sans-serif' font-size='9' fill='%23FFD700' text-anchor='middle'%3ESchool%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row - Right to Left -->
+                <div class="schools__track schools__track--rtl" role="region" aria-label="School logos scrolling right to left">
+                    <div class="schools__sling" aria-live="off">
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%231a1f5c'/%3E%3Ctext x='50%25' y='50%25' font-family='serif' font-size='16' font-weight='bold' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle'%3EHARROW%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-size='10' fill='white' text-anchor='middle' dominant-baseline='middle'%3ELondon%3C/text%3E%3C/svg%3E" alt="Harrow School London" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='10' y='30' width='40' height='60' fill='%230A7EA4'/%3E%3Crect x='60' y='30' width='40' height='60' fill='%23FFD700'/%3E%3Crect x='110' y='30' width='40' height='60' fill='%23C41E3A'/%3E%3Ctext x='50%25' y='65%25' font-family='serif' font-size='14' font-weight='bold' fill='%23333' text-anchor='middle'%3EShrewsbury%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EBangkok%3C/text%3E%3C/svg%3E" alt="Shrewsbury International School Bangkok" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23F5F5F5'/%3E%3Ccircle cx='100' cy='45' r='25' fill='%238B0000'/%3E%3Ctext x='100' y='50' font-family='serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='serif' font-size='13' fill='%238B0000' text-anchor='middle'%3EKing's College India%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3ERohtak%3C/text%3E%3C/svg%3E" alt="King's College India Rohtak" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Ccircle cx='100' cy='50' r='30' fill='none' stroke='%23654321' stroke-width='2'/%3E%3Cpath d='M 100 35 L 100 65 M 85 50 L 115 50' stroke='%23654321' stroke-width='3'/%3E%3Cpath d='M 90 40 Q 95 30, 100 35 Q 105 30, 110 40' fill='%232F4F2F'/%3E%3Ctext x='50%25' y='90%25' font-family='serif' font-size='11' fill='%23654321' text-anchor='middle'%3EWoodstock School%3C/text%3E%3C/svg%3E" alt="Woodstock School" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='80' y='25' width='40' height='40' fill='none' stroke='%230A7EA4' stroke-width='3'/%3E%3Cpath d='M 85 35 L 100 50 L 115 35' fill='%230A7EA4'/%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='11' font-weight='600' fill='%230A7EA4' text-anchor='middle'%3EAga Khan Academy%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EHyderabad%3C/text%3E%3C/svg%3E" alt="Aga Khan Academy Hyderabad" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23000080'/%3E%3Ccircle cx='100' cy='45' r='20' fill='%23FFD700'/%3E%3Cpath d='M 100 30 L 105 40 L 95 40 Z' fill='%23000080'/%3E%3Ctext x='50%25' y='75%25' font-family='serif' font-size='12' font-weight='bold' fill='white' text-anchor='middle'%3EBISHOP COTTON%3C/text%3E%3Ctext x='50%25' y='88%25' font-family='sans-serif' font-size='9' fill='%23FFD700' text-anchor='middle'%3ESchool%3C/text%3E%3C/svg%3E" alt="Bishop Cotton School" class="schools__logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="schools__sling" aria-hidden="true">
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%231a1f5c'/%3E%3Ctext x='50%25' y='50%25' font-family='serif' font-size='16' font-weight='bold' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle'%3EHARROW%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-size='10' fill='white' text-anchor='middle' dominant-baseline='middle'%3ELondon%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='10' y='30' width='40' height='60' fill='%230A7EA4'/%3E%3Crect x='60' y='30' width='40' height='60' fill='%23FFD700'/%3E%3Crect x='110' y='30' width='40' height='60' fill='%23C41E3A'/%3E%3Ctext x='50%25' y='65%25' font-family='serif' font-size='14' font-weight='bold' fill='%23333' text-anchor='middle'%3EShrewsbury%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EBangkok%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23F5F5F5'/%3E%3Ccircle cx='100' cy='45' r='25' fill='%238B0000'/%3E%3Ctext x='100' y='50' font-family='serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='50%25' y='80%25' font-family='serif' font-size='13' fill='%238B0000' text-anchor='middle'%3EKing's College India%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3ERohtak%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Ccircle cx='100' cy='50' r='30' fill='none' stroke='%23654321' stroke-width='2'/%3E%3Cpath d='M 100 35 L 100 65 M 85 50 L 115 50' stroke='%23654321' stroke-width='3'/%3E%3Cpath d='M 90 40 Q 95 30, 100 35 Q 105 30, 110 40' fill='%232F4F2F'/%3E%3Ctext x='50%25' y='90%25' font-family='serif' font-size='11' fill='%23654321' text-anchor='middle'%3EWoodstock School%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='white'/%3E%3Crect x='80' y='25' width='40' height='40' fill='none' stroke='%230A7EA4' stroke-width='3'/%3E%3Cpath d='M 85 35 L 100 50 L 115 35' fill='%230A7EA4'/%3E%3Ctext x='50%25' y='80%25' font-family='sans-serif' font-size='11' font-weight='600' fill='%230A7EA4' text-anchor='middle'%3EAga Khan Academy%3C/text%3E%3Ctext x='50%25' y='92%25' font-family='sans-serif' font-size='9' fill='%23666' text-anchor='middle'%3EHyderabad%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                        <div class="schools__logo-wrapper">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect width='200' height='120' fill='%23000080'/%3E%3Ccircle cx='100' cy='45' r='20' fill='%23FFD700'/%3E%3Cpath d='M 100 30 L 105 40 L 95 40 Z' fill='%23000080'/%3E%3Ctext x='50%25' y='75%25' font-family='serif' font-size='12' font-weight='bold' fill='white' text-anchor='middle'%3EBISHOP COTTON%3C/text%3E%3Ctext x='50%25' y='88%25' font-family='sans-serif' font-size='9' fill='%23FFD700' text-anchor='middle'%3ESchool%3C/text%3E%3C/svg%3E" alt="" class="schools__logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose the School Section -->
+        <section class="categories" id="categories" aria-label="School Categories">
+            <div class="categories__container">
+                <h2 class="categories__title">Choose the School That Fits You Best</h2>
+                
+                <div class="categories__slider" role="region" aria-label="School category cards">
+                    <div class="categories__track">
+                        <!-- Card 1 -->
+                        <article class="categories__card">
+                            <div class="categories__card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23D2691E%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover; background-position: center;">
+                                <div class="categories__card-overlay"></div>
+                            </div>
+                            <div class="categories__card-content">
+                                <h3 class="categories__card-title">Pre-Schools & Early Learning Centres</h3>
+                                <p class="categories__card-description">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="categories__card">
+                            <div class="categories__card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234682B4%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover; background-position: center;">
+                                <div class="categories__card-overlay"></div>
+                            </div>
+                            <div class="categories__card-content">
+                                <h3 class="categories__card-title">K-12 CBSE Day Schools</h3>
+                                <p class="categories__card-description">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="categories__card">
+                            <div class="categories__card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23CD853F%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover; background-position: center;">
+                                <div class="categories__card-overlay"></div>
+                            </div>
+                            <div class="categories__card-content">
+                                <h3 class="categories__card-title">Heritage to New-Age Schools</h3>
+                                <p class="categories__card-description">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
+                            </div>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article class="categories__card">
+                            <div class="categories__card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23B8860B%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover; background-position: center;">
+                                <div class="categories__card-overlay"></div>
+                            </div>
+                            <div class="categories__card-content">
+                                <h3 class="categories__card-title">International Curriculum Schools</h3>
+                                <p class="categories__card-description">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Mobile Controls -->
+                    <div class="categories__controls">
+                        <button class="categories__control categories__control--prev" aria-label="Previous category" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="categories__control categories__control--next" aria-label="Next category" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="categories__dots" role="tablist" aria-label="Category navigation">
+                        <button class="categories__dot categories__dot--active" role="tab" aria-label="View category 1" aria-selected="true" data-index="0" type="button"></button>
+                        <button class="categories__dot" role="tab" aria-label="View category 2" aria-selected="false" data-index="1" type="button"></button>
+                        <button class="categories__dot" role="tab" aria-label="View category 3" aria-selected="false" data-index="2" type="button"></button>
+                        <button class="categories__dot" role="tab" aria-label="View category 4" aria-selected="false" data-index="3" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibition Section Slider -->
+        <section class="exhibition" id="register" aria-label="Exhibition Highlights">
+            <div class="exhibition__container">
+                <div class="exhibition__slider" role="region" aria-label="Exhibition highlights carousel">
+                    <div class="exhibition__track">
+                        <!-- Slide 1 -->
+                        <div class="exhibition__slide exhibition__slide--active">
+                            <div class="exhibition__content">
+                                <p class="exhibition__tagline">Exciting Opportunities for Parents!</p>
+                                <h2 class="exhibition__title">Pre-schedule Your School Appointments</h2>
+                                <p class="exhibition__subtitle">To Avoid Rush</p>
+                                <a href="#schedule" class="btn btn--cta">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <path d="M7 10L10 13L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    PRE-SCHEDULE NOW
+                                </a>
+                            </div>
+                            <div class="exhibition__image" style="background: linear-gradient(135deg, rgba(147, 112, 219, 0.9), rgba(138, 43, 226, 0.9)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%239370DB%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover;">
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="exhibition__slide">
+                            <div class="exhibition__content">
+                                <p class="exhibition__tagline">Join Us at the Exhibition</p>
+                                <h2 class="exhibition__title">Meet School Representatives</h2>
+                                <p class="exhibition__subtitle">Face-to-Face Guidance</p>
+                                <a href="#schedule" class="btn btn--cta">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <path d="M7 10L10 13L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    BOOK YOUR SPOT
+                                </a>
+                            </div>
+                            <div class="exhibition__image" style="background: linear-gradient(135deg, rgba(75, 0, 130, 0.9), rgba(138, 43, 226, 0.9)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234B0082%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover;">
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="exhibition__slide">
+                            <div class="exhibition__content">
+                                <p class="exhibition__tagline">Exclusive Access</p>
+                                <h2 class="exhibition__title">Campus Tours & Workshops</h2>
+                                <p class="exhibition__subtitle">Interactive Sessions</p>
+                                <a href="#schedule" class="btn btn--cta">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <path d="M7 10L10 13L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    REGISTER TODAY
+                                </a>
+                            </div>
+                            <div class="exhibition__image" style="background: linear-gradient(135deg, rgba(106, 13, 173, 0.9), rgba(191, 64, 191, 0.9)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%236A0DAD%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E'); background-size: cover;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exhibition Controls -->
+                    <div class="exhibition__controls">
+                        <button class="exhibition__control exhibition__control--prev" aria-label="Previous highlight" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="exhibition__control exhibition__control--next" aria-label="Next highlight" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Exhibition Indicators -->
+                    <div class="exhibition__indicators" role="tablist" aria-label="Highlight navigation">
+                        <button class="exhibition__indicator exhibition__indicator--active" role="tab" aria-label="Go to highlight 1" aria-selected="true" data-slide="0" type="button"></button>
+                        <button class="exhibition__indicator" role="tab" aria-label="Go to highlight 2" aria-selected="false" data-slide="1" type="button"></button>
+                        <button class="exhibition__indicator" role="tab" aria-label="Go to highlight 3" aria-selected="false" data-slide="2" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2026 Premier Schools Exhibition. All rights reserved.</p>
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#privacy" class="footer__link">Privacy Policy</a>
+                <a href="#terms" class="footer__link">Terms of Service</a>
+                <a href="#contact" class="footer__link">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
